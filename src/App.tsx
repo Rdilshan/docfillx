@@ -1,7 +1,7 @@
 
 import './App.css'
 
-import {handleDownload} from 'docfillx';
+import {handleFile} from 'docfillx';
 
 function App() {
 
@@ -13,11 +13,13 @@ function App() {
       { id: 2, name: "b" },
     ],
   };
-  
+  //this data save on word template
+  //template in public folder
+
   return (
     <>
-      <h1>check pdf</h1>
-      <button onClick={() => handleDownload("/template.docx",datavalue)}>Download Document</button>
+      <h1>Sample for docfillx</h1>
+      <button onClick={() => handleFile("/template.docx",datavalue)}>Download Document</button>
 
     </>
   )
